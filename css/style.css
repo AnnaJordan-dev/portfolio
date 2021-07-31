@@ -57,6 +57,9 @@ h1 {
 .container h1 {
   color: #006666;
 }
+.container h1:hover {
+  color: #fff;
+}
 
 /* About section */
 
