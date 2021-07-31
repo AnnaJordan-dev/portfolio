@@ -13,58 +13,102 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <title>Anna Jordan | Portfolio</title>
 </head>
 <body>
   <section class="hero" id="title">
-    <div class="container-fluid">
 
-      <!-- Nav Bar -->
-      
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="row">
-          <a class="logo" href="#" title="Anna Jordan"></a>
-          <img class="title-image" src="images/logo 2.svg" alt="AJ-image">
-        </div>  
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <button type="button" class="btn btn-light btn-lg bio-button"></i>About</button>
-            </li>
-            <li class="nav-item">
-              <button type="button" class="btn btn-light btn-lg project-button"></i>Projects</button>
-            </li>
-            <li class="nav-item">
-              <button type="button" class="btn btn-light btn-lg contact-button"></i>Contact</button>
-            </li>
-          </ul>
+    <div id="home"></div>
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light hero">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block">
+          
+            <!-- hidden spacer to center brand on mobile --></span>
+        <a class="navbar-brand d-none d-lg-inline-block" href="#" title="Anna Jordan">
+             <img class="title-image" src="images/logo 2.svg" alt="AJ-image">
+        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+            <img src="images/logo 2.svg" alt="logo">
+        </a>
+        
+      </div>  
+        <div class="w-90 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-      </nav>
-
-      <!-- Title -->
-<div class="container">
-      <div class="row">
-        <div class="col-lg">
-          <h1 class="big-heading">Hi, I am Anna and I am a developer.</h1>
-        </div>  
-      </div>
     </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+        <ul class="navbar-nav ms-auto flex-nowrap">
+            <!-- <li class="nav-item">
+                <a href="#" class="nav-link m-2 menu-item nav-active">Our Solution</a>
+            </li> -->
+            <li class="nav-item">
+                <a href="#about" class="nav-link m-2 menu-item">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link m-2 menu-item">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link m-2 menu-item">Contact</a>
+            </li>
+        </ul>
     </div>
+</nav>
   </section>
       
-      <!-- About -->
-<section class="about">
-  <div class="container">
-    <div class="row">
-      <h1 class="about-heading">About</h1>
-    </div>
-  </div>
+        <!-- About -->
+  <section class="about-section" id="about">
+    
+  </section>  
 
-</section>  
+        <!-- Projects -->
+  <section class="projects py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PlaceholderL: Thumbnail" preserveAspectRatio="xMidMid slice" focusable="false">
+                <title class="placeholder"></title>
+                  <rect width="100%" height="100%" fill="#fff"></rect>
+                  <text width="x=50%" y="50%" fill="#700bc7" dy=".3em">Thumbnail</text>
+              </svg> 
+              <div class="card-body">
+                <p class="card-text">
+                  "Placeholder for text explaining project work"
+                </p>
+                <div class="d-flex justify-content-between align-items-center"></div>
+              </div> 
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PlaceholderL: Thumbnail" preserveAspectRatio="xMidMid slice" focusable="false">
+                  <title class="placeholder"></title>
+                    <rect width="100%" height="100%" fill="#fff"></rect>
+                    <text width="x=50%" y="50%" fill="#700bc7" dy=".3em">Thumbnail</text>
+                </svg> 
+                <div class="card-body">
+                  <p class="card-text">
+                    "Placeholder for text explaining project work"
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center"></div>
+                </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>   
+        
+        <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+        <div class="row">
+            <h1 class="big-heading">Contact</h1>
+        </div>
+    </div>
+  </section>   
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
